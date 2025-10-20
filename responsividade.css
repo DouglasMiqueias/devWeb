@@ -1,0 +1,27 @@
+/* === RESPONSIVIDADE DO LOADER === */
+@media (max-width: 992px) {
+  .loader-logo {
+    width: 180px;
+  }
+  .loader-logo img {
+    animation: revealLogo 2.2s ease 3 forwards;
+  }
+}
+
+@media (max-width: 600px) {
+  .loader-logo {
+    width: 240px;
+  }
+  .loader-logo img {
+    animation: revealLogo 2s ease 3 forwards;
+  }
+}
+
+@media (max-width: 400px) {
+  .loader-logo {
+    width: 110px;
+  }
+  .loader-logo img {
+    animation: revealLogo 1.8s ease 3 forwards;
+  }
+}
