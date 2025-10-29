@@ -30,7 +30,7 @@ img{max-width:100%;display:block}
 .navbar{position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:saturate(140%) blur(12px);
   background:rgba(13,13,13,.6);border-bottom:1px solid rgba(255,255,255,.06)}
 .nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0}
-.logo img{filter:drop-shadow(0 0 12px rgba(255,23,68,.18));}
+.logo img{filter:drop-shadow(0 0 12px rgba(255,23,68,.18)); transform: scale(1.5);}
 .menu{display:flex;gap:1.2rem}
 .menu a{color:#DADADA;text-decoration:none;font-weight:600;opacity:.9}
 .menu a:hover{color:#fff}
