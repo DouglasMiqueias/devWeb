@@ -1,0 +1,49 @@
+/* Breakpoints e ajustes responsivos */
+
+/* Mobile-first: ajustes finos */
+.nav-wrap{padding:.9rem 0}
+.menu{display:none}
+.menu.open{display:flex;flex-direction:column;position:absolute;right:4%;top:64px;background:rgba(20,20,20,.96);border:1px solid rgba(255,255,255,.08);border-radius:.8rem;padding:.8rem;gap:.6rem}
+.menu a{padding:.4rem .6rem}
+.menu-toggle{display:inline-flex}
+
+/* >= 480px */
+@media(min-width:480px){
+  .hero-text h1{font-size:2.4rem}
+}
+
+/* >= 640px */
+@media(min-width:640px){
+  .hero-text h1{font-size:2.7rem}
+}
+
+/* >= 768px */
+@media(min-width:768px){
+  .menu{display:flex;position:static;background:transparent;border:0;border-radius:0;padding:0;gap:1.2rem}
+  .menu a{padding:0}
+  .menu-toggle{display:none}
+  .nav-cta{display:inline-flex}
+  .hero-grid{grid-template-columns:1.05fr .95fr;gap:3rem;padding:4rem 0}
+  .hero-text h1{font-size:3rem}
+  .servicos-grid{grid-template-columns:1fr 1fr}
+  .projeto-card{grid-template-columns:1.1fr .9fr;padding:1.6rem 1.6rem}
+  .projeto-card h3{font-size:1.5rem}
+  .timeline-items{gap:2.6rem}
+  .timeline-item{grid-template-columns:1fr 1fr;align-items:center}
+  .timeline-item .dot{position:absolute;left:calc(50% - 21px);top:calc(50% - 21px)}
+  .timeline-item .content{padding:1rem 1rem;border-radius:1rem;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);grid-area:content;width:90%}
+  .timeline-item:nth-child(odd){grid-template-areas:"content ."}
+  .timeline-item:nth-child(even){grid-template-areas:". content"}
+  .timeline-item:nth-child(odd) .content{justify-self:end;text-align:right}
+  .timeline-item:nth-child(even) .content{justify-self:start;text-align:left}
+}
+
+/* >= 1024px */
+@media(min-width:1024px){
+  .hero-text h1{font-size:3.4rem}
+}
+
+/* >= 1280px */
+@media(min-width:1280px){
+  .hero-text h1{font-size:3.8rem}
+}
