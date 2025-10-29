@@ -6,7 +6,7 @@
   --panel:#1E1E1E;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%; overflow-x: hidden;}
 html{scroll-behavior:smooth}
 body{
   margin:0;
